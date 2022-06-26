@@ -1,5 +1,5 @@
-import { React } from 'react';
-import BookForm from '.BookForm';
+import React from 'react';
+import BookForm from './BookForm';
 
 const AddBook = () => {
     const handleOnSubmit = (book) => {

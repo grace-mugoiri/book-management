@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Form, Button } from 'react-bootstrap';
-import { v4, uuidv4 } from 'uuid';
+import { v4 as uuidv4 } from 'uuid';
 
 const BookForm = (props) => {
     const [book, setBook] = useState({
@@ -13,6 +13,10 @@ const BookForm = (props) => {
 
     const [errorMsg, setErrorMsg] = useState('');
     const [bookname, author, price, quantity] = book;
+    for (let i = 0; i < book.length; i++) {
+        const x = book[i];
+        console.log(x);
+    }
 
     const handleOnSubmit = (event) => {
         event.preventDefault();
